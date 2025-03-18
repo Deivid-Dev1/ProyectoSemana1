@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="registro.php" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre">
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" placeholder="Apellido">
+        
+        <label for="nacimiento">Fecha de Nacimiento</label>
+        <input type="date" name="nacimiento">
+        
+        <label for="email">Correo</label>
+        <input type="text" name="correo" placeholder="Correo">
+        
+        <label for="number">Numero de Telefono</label>
+        <input type="number" name="telefono" placeholder="Telefono">
+        
+        <div class="botones">
+            <input type="button" onclick="alert('Mensaje de alerta')" value="Alerta">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </div>
+    </form>
+    <footer>
+        <p>Derechos reservados &copy; 2025</p>
+    </footer>
+</body>
+</html>
