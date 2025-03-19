@@ -8,7 +8,14 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="registro.php" method="POST">
+    <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="coches.html">Coches</a></li>
+          <li><a href="registro.html">Formulario Contacto</a></li>
+        </ul>
+        <h2>Registro de Datos</h2>
+        <form action="registro.php" method="POST" enctype="multipart/form-data">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" placeholder="Nombre">
         
@@ -23,6 +30,10 @@
         
         <label for="number">Numero de Telefono</label>
         <input type="number" name="telefono" placeholder="Telefono">
+
+        <!-- para subir una imagen -->
+        <label for="imagen">Subir Imagen</label>
+        <input type="file" name="imagen" id="imagen" accept="image/*" required>
         
         <div class="botones">
             <input type="button" onclick="alert('Mensaje de alerta')" value="Alerta">

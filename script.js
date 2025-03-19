@@ -7,6 +7,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     let nacimiento = document.querySelector('input[name="nacimiento"]').value;
     let correo = document.querySelector('input[name="correo"]').value.trim();
     let telefono = document.querySelector('input[name="telefono"]').value.trim();
+    let imagen = document.querySelector('input[name="imagen"]').files[0];
 
  
     if (nombre === '') {
@@ -31,6 +32,16 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     if (telefono === '' || isNaN(telefono)) {
         alert('Por favor, ingresa un número de teléfono válido.');
+        return;
+    }
+    if (!imagen) {
+        alert('Por favor, selecciona una imagen.');
+        return;
+    }
+
+    const allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
+    if (!allowedTypes.includes(imagen.type)) {
+        alert('Solo se permiten archivos de tipo JPEG, PNG o GIF.');
         return;
     }
 
