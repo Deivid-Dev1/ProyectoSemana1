@@ -152,3 +152,10 @@ input[type="submit"]:first-child {
     height: 700px; 
     object-fit: cover;
 }
+
+/*imagen pagina principal*/
+.imagen-principal {
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+    max-width: 100%; /* Ajusta el tamaño al contenedor */
+  }

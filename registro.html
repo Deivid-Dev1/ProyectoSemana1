@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
           <li><a href="registro.html">Formulario Contacto</a></li>
         </ul>
         <h2>Registro de Datos</h2>
-        <form action="registro.php" method="POST" enctype="multipart/form-data">
+        <form action="procesar.php" method="POST" enctype="multipart/form-data">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" placeholder="Nombre">
         
@@ -31,7 +31,6 @@
         <label for="number">Numero de Telefono</label>
         <input type="number" name="telefono" placeholder="Telefono">
 
-        <!-- para subir una imagen -->
         <label for="imagen">Subir Imagen</label>
         <input type="file" name="imagen" id="imagen" accept="image/*" required>
         

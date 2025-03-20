@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nombreArchivo = basename($_FILES['imagen']['name']);
         $rutaCompleta = $directorioDestino . $nombreArchivo;
 
-        /
+        
         if (move_uploaded_file($_FILES['imagen']['tmp_name'], $rutaCompleta)) {
             echo "Imagen subida correctamente.";
         } else {
